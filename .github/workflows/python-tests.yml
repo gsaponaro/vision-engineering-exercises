@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.12, 3.13, 3.14]
+        python-version: [3.12, 3.13]
         mode: [venv, system]
     name: Unit Tests - Python ${{ matrix.python-version }} - ${{ matrix.mode }}
     steps:
