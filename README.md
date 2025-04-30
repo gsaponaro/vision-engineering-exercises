@@ -4,6 +4,9 @@ Curated collection of Python exercises on classical computer vision (CV) and rea
 
 Originally developed for personal interview preparation and portfolio use, these exercises may also be useful for other engineers or technical reviewers evaluating practical CV and software engineering skills in Python.
 
+[![Unit Tests](https://github.com/gsaponaro/vision-engineering-exercises/actions/workflows/python-tests.yml/badge.svg)](https://github.com/gsaponaro/vision-engineering-exercises/actions/workflows/python-tests.yml)
+
+
 ## Key Areas Covered
 
 - **Real-Time Data Processing**: Working with live data streams using techniques such as moving averages and staged processing pipelines.
@@ -26,7 +29,7 @@ This repository contains the following exercises:
 ## Requirements
 
 - Linux operating system (tested on Ubuntu 24.04)
-- Python 3 (recommended version: 3.12+)
+- Python 3.10+ (recommended version: 3.12)
 - Required Python packages listed in `requirements.txt`
 
 To set up the environment:
