@@ -11,9 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
+        # Run test jobs in different configurations: multiple Python versions,
+        # both in virtual environment (venv) and system Python
         python-version: ['3.10', 3.11, 3.12]
         mode: [venv, system]
     name: Unit Tests - Python ${{ matrix.python-version }} - ${{ matrix.mode }}
+
     steps:
       - uses: actions/checkout@v4
 
