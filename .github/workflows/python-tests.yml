@@ -1,0 +1,43 @@
+name: Unit Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        mode: [venv, system]
+    name: Unit tests (${{ matrix.mode }})
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Set up environment (venv)
+        if: matrix.mode == 'venv'
+        run: |
+          python -m venv .venv
+          source .venv/bin/activate
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install requirements (system)
+        if: matrix.mode == 'system'
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run unit tests
+        run: |
+          if [ "${{ matrix.mode }}" == "venv" ]; then
+            source .venv/bin/activate
+          fi
+          python -m unittest discover tests

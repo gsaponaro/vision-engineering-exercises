@@ -4,8 +4,8 @@ Curated collection of Python exercises on classical computer vision (CV) and rea
 
 Originally developed for personal interview preparation and portfolio use, these exercises may also be useful for other engineers or technical reviewers evaluating practical CV and software engineering skills in Python.
 
-[![Unit Tests (venv)](https://github.com/gsaponaro/vision-engineering-exercises/actions/workflows/python-tests-venv.yml/badge.svg)](https://github.com/gsaponaro/vision-engineering-exercises/actions/workflows/python-tests-venv.yml)
-[![Unit Tests (system)](https://github.com/gsaponaro/vision-engineering-exercises/actions/workflows/python-tests-system.yml/badge.svg)](https://github.com/gsaponaro/vision-engineering-exercises/actions/workflows/python-tests-system.yml)
+[![Unit Tests](https://github.com/gsaponaro/vision-engineering-exercises/actions/workflows/python-tests.yml/badge.svg)](https://github.com/gsaponaro/vision-engineering-exercises/actions/workflows/python-tests.yml)
+
 
 ## Key Areas Covered
 
