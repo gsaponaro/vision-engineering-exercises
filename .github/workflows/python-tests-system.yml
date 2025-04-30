@@ -1,4 +1,4 @@
-name: Run Python Unit in Native Runner System
+name: Unit Tests in Native Runner System
 
 on:
   push:

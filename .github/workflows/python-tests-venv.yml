@@ -1,4 +1,4 @@
-name: Run Python Unit Tests in virtual environment
+name: Unit Tests in virtual environment
 
 on:
   push:
