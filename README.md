@@ -26,16 +26,21 @@ This repository contains the following exercises:
 ## Requirements
 
 - Linux operating system (tested on Ubuntu 24.04)
-- Conda distribution (recommended version: 23.3.1+)
 - Python 3 (recommended version: 3.12+)
-- Required Python packages, listed in the `env/linux_conda_env.yml` Conda environment file
+- Required Python packages listed in `requirements.txt`
 
-To install the dependencies, run:
+To set up the environment:
 
 ```bash
-conda env create -f env/linux_conda_env.yml
-conda activate vision-eng
+python3 -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
 ```
+
+When finished, deactivate the environment with `deactivate`.
+
+Note: the `.venv` folder is approximately 1 GB (due to MediaPipe); you can safely delete it when no longer needed.
 
 ## Usage
 

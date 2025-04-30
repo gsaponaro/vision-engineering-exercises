@@ -1,0 +1,10 @@
+black
+cffi
+cfgv
+click
+distlib
+filelock
+flake8
+opencv-python
+mediapipe
+numpy
