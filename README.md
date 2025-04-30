@@ -29,7 +29,7 @@ This repository contains the following exercises:
 ## Requirements
 
 - Linux operating system (tested on Ubuntu 24.04)
-- Python 3 (recommended version: 3.12+)
+- Python 3.10+ (recommended version: 3.12)
 - Required Python packages listed in `requirements.txt`
 
 To set up the environment:
